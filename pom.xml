@@ -704,7 +704,6 @@
   <modules>
     <module>buildtools</module>
     <module>math</module>
-    <module>core</module>
     <module>integration</module>
     <module>examples</module>
     <module>distribution</module>
