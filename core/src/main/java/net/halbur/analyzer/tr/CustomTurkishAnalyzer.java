@@ -49,7 +49,8 @@ public class CustomTurkishAnalyzer extends org.apache.lucene.analysis.Analyzer {
 
 
    // File stopwordFile = FileUtils.toFile(getClass().getResource("/opt/mahout/core/src/main/resources/stopwords.txt"));
-    File stopwordFile = new File("/opt/mahout/core/src/main/resources/stopwords.txt");
+          File stopwordFile = FileUtils.toFile(getClass().getResource("/resources/stopwords.txt"));
+//    File stopwordFile = new File("/opt/mahout/core/src/main/resources/stopwords.txt");
     String[] stopwordList = null;
     try {
         String s = FileUtils.readFileToString(stopwordFile);
